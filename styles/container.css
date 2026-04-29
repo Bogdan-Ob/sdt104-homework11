@@ -40,6 +40,22 @@
     font-weight: 600;
 }
 
+.course-btn {
+    background: none;
+    color: #DCEDFF;
+    border: 2px solid #202020;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.course-btn:hover {
+    background: #684e8a;
+    color: #DCEDFF;
+}
+
 @media (max-width: 768px) {
 
     .cont-grid {
