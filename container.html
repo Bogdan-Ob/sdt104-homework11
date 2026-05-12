@@ -20,7 +20,7 @@
         </nav>
 
         <div class="nav-button">
-            <a href="" class="nav-cons">Consultation</a>
+            <a href="" class="nav-cons">Register</a>
         </div>
 
     </header>
@@ -35,6 +35,25 @@
         <p>&copy; 2026 IT Academy. All rights reserved.</p>
     </footer>
 
-    <script src="js.js"></script>
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Registration for Course</h2>
+            <form id="registrationForm">
+                <label for="courseSelect">Choose Course:</label>
+                <select id="courseSelect" required>
+                    </select>
+
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+
+                <button type="submit" class="submit-btn">Send Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/container.js"></script>
 </body>
 </html>

@@ -37,6 +37,10 @@
     border-radius: var(--radius);
     width: 100%;
     padding: 0 3vh 3vh 3vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .arrows {
@@ -131,8 +135,12 @@
     gap: 2vh;
 }
 
-.whyus h1 {
+.whyus h2 {
     margin: 1vh 0;
+}
+.why-right p {
+    transition: opacity 0.2s ease-in-out;
+    min-height: 100px;
 }
 
 .why-left button {
@@ -145,8 +153,12 @@
     border-radius: var(--radius);
 }
 
-.why-left button:active {
-    transform: translateY(5%);
+.why-left button.active {
+    background-color: #8b76a7;
+    transform: scale(0.98);
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #DCEDFF;
+    transition: all 0.2s ease;
 }
 
 .why-right {

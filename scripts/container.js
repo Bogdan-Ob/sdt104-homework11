@@ -1,45 +1,8 @@
-
-const courses = [
-    {
-        id: 1,
-        title: "Full-Stack Web Development",
-        description: "Master modern HTML5, CSS3, and JavaScript to build responsive apps.",
-        imageUrl: "photo/web-dev.png",
-        link: "#"
-    },
-    {
-        id: 2,
-        title: "Data Science & Machine Learning",
-        description: "Turn data into insights using Python and SQL for business intelligence.",
-        imageUrl: "photo/data-sci.png",
-        link: "#"
-    },
-    {
-        id: 3,
-        title: "Cybersecurity Expert",
-        description: "Protect systems from threats. Learn ethical hacking and network security.",
-        imageUrl: "photo/cyber-sec.png",
-        link: "#"
-    },
-    {
-        id: 4,
-        title: "UI/UX Design Professional",
-        description: "Design intuitive digital products. Master Figma, wireframing, and user psychology to create user-friendly interfaces for modern web and mobile platforms.",
-        imageUrl: "photo/ui-des.png",
-        link: "#"
-    },
-    {
-        id: 5,
-        title: "Mobile App Development",
-        description: "Build native and cross-platform apps. Master Flutter and Swift to create high-performance mobile applications for iOS and Android devices.",
-        imageUrl: "photo/app-dev.png",
-        link: "#"
-    }
-];
-
+import { courses } from './data.js';
+import { setupModal } from './main.js';
+setupModal();
 function renderCards(dataArray) {
     const container = document.querySelector('.cont-grid'); 
-    container.innerHTML = '';
 
     dataArray.forEach(course => {
         const card = document.createElement('article');
